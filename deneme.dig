@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>and_gate</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>a,b</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module and_gate(a,b,y);
+input a,b;
+output y;
+and(y,a,b);
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>y</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="520" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes/>
+      <pos x="720" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="520" y="240"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="520" y="240"/>
+      <p2 x="580" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="200"/>
+      <p2 x="580" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="220"/>
+      <p2 x="720" y="220"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
